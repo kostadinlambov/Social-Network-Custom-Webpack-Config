@@ -2,7 +2,7 @@ import React, { Component, Fragment, lazy, Suspense } from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom';
 
 import { Footer } from './components/common';
-// import { NavBar } from './components/home/NavBar';
+import  NavBar from './components/home/NavBar';
 import { ToastComponent } from './components/common'
 import { userService } from './infrastructure';
 import { ToastContainer, toast, Zoom } from 'react-toastify';
@@ -13,6 +13,12 @@ import { CircleLoader } from 'react-spinners';
 
 import { connect } from 'react-redux';
 import { logoutAction } from './store/actions/authActions';
+
+// import  { StartPage } from './components/auth/StartPage';
+// import { RegisterPage } from './components/auth/RegisterPage';
+// import { LoginPage } from './components/auth/LoginPage';
+// import { HomePage } from './components/home/HomePage';
+// import { ErrorPage } from './components/common/ErrorPage';
 
 const StartPage = lazy(() => import('./components/auth/StartPage'))
 const RegisterPage = lazy(() => import('./components/auth/RegisterPage'))
@@ -48,7 +54,7 @@ class App extends Component {
 
     return (
       <Fragment>
-        {/* <NavBar loggedIn={localStorage.getItem('token') != null} onLogout={this.onLogout} {...this.props} /> */}
+        <NavBar loggedIn={localStorage.getItem('token') != null} onLogout={this.onLogout} {...this.props} />
         <ToastContainer transition={Zoom} closeButton={false} />
         <Suspense fallback={
           <div className='sweet-loading'>

@@ -18,7 +18,7 @@
                 },
                 "useBuiltIns": "usage",
                 "corejs": 3,
-                "debug": true
+                "debug": false
             }
         ],
         [
@@ -28,7 +28,7 @@
                     "ie": "11"
                 },
                 "useBuiltIns": true,
-                "debug": true
+                "debug": false
             }
         ]
     ],
