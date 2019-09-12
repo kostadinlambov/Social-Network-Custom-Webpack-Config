@@ -29,7 +29,22 @@ module.exports = {
               publicPath: '../images',
               useRelativePaths: true,
             }
-          }
+          },
+        ]
+      },
+      {
+        test: /\.(woff|woff2)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[hash].[ext]",
+              context: path.resolve(__dirname, "src/assets"),
+              outputPath: 'fonts',
+              publicPath: '../fonts',
+              useRelativePaths: true,
+            }
+          },
         ]
       },
     ]

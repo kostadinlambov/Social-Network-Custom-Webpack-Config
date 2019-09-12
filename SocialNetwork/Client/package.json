@@ -28,7 +28,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
+    "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
@@ -39,15 +39,24 @@
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.6.1",
     "babel-loader": "^8.0.6",
+    "browserslist": "^4.7.0",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
+    "critters-webpack-plugin": "^2.4.0",
     "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
     "file-loader": "^4.2.0",
+    "glob": "^7.1.4",
+    "glob-all": "^3.1.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "purgecss": "^1.4.0",
+    "purgecss-webpack-plugin": "^1.5.0",
     "redux-devtools": "^3.5.0",
     "style-loader": "^1.0.0",
     "url-loader": "^2.1.0",
