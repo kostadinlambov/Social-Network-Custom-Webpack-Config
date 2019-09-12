@@ -18,18 +18,33 @@ import { fetchPicturesAction } from '../../store/actions/pictureActions';
 import { fetchAllUnreadMessagesAction } from '../../store/actions/messageActions';
 import { fetchLoggedInUserAction, fetchTimeLineUserAction, fetchAllFriendsAction, findFriendsAction } from '../../store/actions/userActions';
 
-const UserSearchResultsPage = lazy(() => import('../user/UserSearchResultsPage'));
-const UserProfilePage = lazy(() => import('../user/UserProfilePage'));
-const UserFriendsAllPage = lazy(() => import('../user/UserFriendsAllPage'));
-const UserFindFriendsPage = lazy(() => import('../user/UserFindFriendsPage'));
-const UserFriendRequestsPage = lazy(() => import('../user/UserFriendRequestsPage'));
-const UserAllPage = lazy(() => import('../user/UserAllPage'));
-const UserEditPage = lazy(() => import('../user/UserEditPage'));
-const UserDeletePage = lazy(() => import('../user/UserDeletePage'));
-const UserGalleryPage = lazy(() => import('../user/UserGalleryPage'));
-const UserLogsPage = lazy(() => import('../user/UserLogsPage'));
-const MessageBox = lazy(() => import('./MessageBox'));
-const ErrorPage = lazy(() => import('../common/ErrorPage'));
+
+import UserSearchResultsPage from '../user/UserSearchResultsPage';
+import UserProfilePage from '../user/UserProfilePage';
+import UserFriendsAllPage from '../user/UserFriendsAllPage';
+import UserFindFriendsPage from '../user/UserFindFriendsPage';
+import UserFriendRequestsPage from '../user/UserFriendRequestsPage';
+import UserAllPage from '../user/UserAllPage';
+import UserEditPage from '../user/UserEditPage';
+import UserDeletePage from '../user/UserDeletePage';
+import UserGalleryPage from '../user/UserGalleryPage';
+import UserLogsPage from '../user/UserLogsPage';
+import MessageBox from './MessageBox';
+import ErrorPage from '../common/ErrorPage';
+
+
+// const UserSearchResultsPage = lazy(() => import('../user/UserSearchResultsPage'));
+// const UserProfilePage = lazy(() => import('../user/UserProfilePage'));
+// const UserFriendsAllPage = lazy(() => import('../user/UserFriendsAllPage'));
+// const UserFindFriendsPage = lazy(() => import('../user/UserFindFriendsPage'));
+// const UserFriendRequestsPage = lazy(() => import('../user/UserFriendRequestsPage'));
+// const UserAllPage = lazy(() => import('../user/UserAllPage'));
+// const UserEditPage = lazy(() => import('../user/UserEditPage'));
+// const UserDeletePage = lazy(() => import('../user/UserDeletePage'));
+// const UserGalleryPage = lazy(() => import('../user/UserGalleryPage'));
+// const UserLogsPage = lazy(() => import('../user/UserLogsPage'));
+// const MessageBox = lazy(() => import('./MessageBox'));
+// const ErrorPage = lazy(() => import('../common/ErrorPage'));
 
 const override = css`
         display: block;
